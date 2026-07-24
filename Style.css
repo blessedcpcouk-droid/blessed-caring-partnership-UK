@@ -1,0 +1,346 @@
+/*==================================================
+  Blessed Caring Partnership
+  Professional Healthcare Website
+  style.css - Part 1
+==================================================*/
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+/* Variables */
+
+:root{
+
+--primary:#2E7D32;
+
+--primary-dark:#1B5E20;
+
+--secondary:#4CAF50;
+
+--light:#F4FFF5;
+
+--white:#ffffff;
+
+--text:#444444;
+
+--heading:#16351F;
+
+--shadow:0 10px 30px rgba(0,0,0,.08);
+
+--radius:12px;
+
+}
+
+/* Body */
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#f8fcf8;
+
+color:var(--text);
+
+line-height:1.7;
+
+overflow-x:hidden;
+
+}
+
+/* Images */
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* Links */
+
+a{
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+/* Lists */
+
+ul{
+
+list-style:none;
+
+}
+
+/* Container */
+
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+}
+
+/* Section */
+
+section{
+
+padding:90px 0;
+
+}
+
+/* Headings */
+
+h1,h2,h3,h4{
+
+color:var(--heading);
+
+font-weight:700;
+
+}
+
+p{
+
+margin-top:15px;
+
+font-size:16px;
+
+}
+
+/* Buttons */
+
+.btn-primary{
+
+display:inline-block;
+
+background:var(--primary);
+
+color:#fff;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-weight:600;
+
+transition:.3s;
+
+box-shadow:var(--shadow);
+
+}
+
+.btn-primary:hover{
+
+background:var(--primary-dark);
+
+transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+display:inline-block;
+
+padding:15px 35px;
+
+border:2px solid var(--primary);
+
+border-radius:50px;
+
+color:var(--primary);
+
+font-weight:600;
+
+margin-left:15px;
+
+transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+background:var(--primary);
+
+color:#fff;
+
+}
+
+/* Section Title */
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title span{
+
+color:var(--primary);
+
+font-weight:700;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+font-size:14px;
+
+}
+
+.section-title h2{
+
+font-size:40px;
+
+margin:15px 0;
+
+}
+
+.section-title p{
+
+max-width:700px;
+
+margin:auto;
+
+}
+
+/*=====================
+ HEADER
+======================*/
+
+.header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+z-index:999;
+
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+
+}
+
+.header .container{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 0;
+
+}
+
+/* Logo */
+
+.logo img{
+
+height:65px;
+
+}
+
+/* Navigation */
+
+.navbar ul{
+
+display:flex;
+
+gap:35px;
+
+}
+
+.navbar a{
+
+color:var(--heading);
+
+font-weight:600;
+
+position:relative;
+
+}
+
+.navbar a:hover,
+
+.navbar .active{
+
+color:var(--primary);
+
+}
+
+.navbar a::after{
+
+content:'';
+
+position:absolute;
+
+left:0;
+
+bottom:-8px;
+
+width:0;
+
+height:3px;
+
+background:var(--primary);
+
+transition:.3s;
+
+border-radius:20px;
+
+}
+
+.navbar a:hover::after,
+
+.navbar .active::after{
+
+width:100%;
+
+}
+
+/* Header Button */
+
+.header-btn{
+
+display:flex;
+
+align-items:center;
+
+}
+
+/* Mobile Menu */
+
+.menu-btn{
+
+display:none;
+
+font-size:30px;
+
+cursor:pointer;
+
+color:var(--primary);
+
+}
